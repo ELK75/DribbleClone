@@ -1,0 +1,14 @@
+.site-header {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    background-color: black;
+
+    &__logo {
+        margin: 1rem 0;
+        padding-left: 2rem;
+        font-size: 3rem;
+        font-family: Scribble;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,14 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@font-face {
+    font-family: Scribble;
+    src: url(/assets/styles/fonts/Scribble.ttf);
+}
