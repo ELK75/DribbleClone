@@ -1,14 +1,21 @@
 .site-header {
-    position: absolute;
-    width: 100%;
-    z-index: 2;
-    background-color: black;
 
     &__logo {
-        margin: 1rem 0;
-        padding-left: 2rem;
-        font-size: 3rem;
+        padding-left: 1rem;
+        font-size: 2rem;
         font-family: Scribble;
         font-weight: 600;
+    }
+
+    &__links--padding-left {
+        padding-left: 1.5rem;
+    }
+
+    &--large {
+        transform: scale(2.3) translateY(-3px);
+    }
+
+    &--margin-left {
+        margin-left: 0.8rem;
     }
 }
