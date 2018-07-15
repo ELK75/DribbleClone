@@ -8219,12 +8219,40 @@ img {
         font-family: Scribble;
         font-weight: 600;
     }
+@media(min-width: 1200px) {
 .site-header__links--padding-left {
-        padding-left: 1.5rem;
+            padding-left: 1.5rem
     }
-.site-header--large {
-        transform: scale(2.3) translateY(-3px);
     }
+.site-header__dropdown {
+
+        font-size: 1.8rem;
+        transform: translateY(-18px);
+    }
+@media(min-width: 1200px) {
+.site-header__dropdown {
+            font-size: 1rem;
+            transform: scale(2.3) translateY(-3px)
+    }
+    }
+@media(min-width: 1200px) {
 .site-header--margin-left {
-        margin-left: 0.8rem;
+            margin-left: 0.5rem
+    }
+    }
+.site-header__img {
+
+        display: none;
+    }
+@media(min-width: 1200px) {
+.site-header__img {
+
+            display: inline-block;
+            margin-right: 1.5rem
+    }
+
+            .site-header__img img {
+                max-height: 50px;
+                border-radius: 50%;
+            }
     }

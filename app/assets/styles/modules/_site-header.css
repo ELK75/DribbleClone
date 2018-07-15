@@ -8,14 +8,43 @@
     }
 
     &__links--padding-left {
-        padding-left: 1.5rem;
+        
+        @mixin atMedium {
+            padding-left: 1.5rem;
+        }
     }
 
-    &--large {
-        transform: scale(2.3) translateY(-3px);
+    &__dropdown {
+
+        font-size: 1.8rem;
+        transform: translateY(-18px);
+
+        @mixin atMedium {
+            font-size: 1rem;
+            transform: scale(2.3) translateY(-3px);
+        }
     }
 
     &--margin-left {
-        margin-left: 0.8rem;
+
+        @mixin atMedium {
+            margin-left: 0.5rem;
+        }
+    }
+
+    &__img {
+
+        display: none;
+
+        @mixin atMedium {
+
+            display: inline-block;
+            margin-right: 1.5rem;
+
+            img {
+                max-height: 50px;
+                border-radius: 50%;
+            }
+        }
     }
 }
