@@ -1,0 +1,49 @@
+.header {
+
+    & strong {
+        font-weight: 700;
+    }
+
+    &--padding-top-more {
+        padding-top: 40px;
+    }
+    
+    &--padding-top-less {
+        padding-top: 20px;
+    }
+
+    &__query {
+        font-weight: 300;
+    }
+
+    &__tagged {
+        display: none;
+
+        @mixin atSmall {
+            display: inline;
+        }
+    }
+
+    &__results {
+        font-weight: 300;
+        font-size: 1.2rem;
+    }
+
+    &__subheader {
+
+        .dropdown {
+            float: left;
+            clear: both;
+            display: block;
+
+            @mixin atSmall {
+                clear: none;
+                float: right;
+            }
+        }
+
+        @mixin clearfix;
+    }
+
+    @mixin clearfix;
+}
