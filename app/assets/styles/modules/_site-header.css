@@ -9,7 +9,7 @@
 
     &__links--padding-left {
         
-        @mixin atMedium {
+        @mixin atSmall {
             padding-left: 1.5rem;
         }
     }
@@ -19,7 +19,7 @@
         font-size: 1.8rem;
         transform: translateY(-18px);
 
-        @mixin atMedium {
+        @mixin atSmall {
             font-size: 1rem;
             transform: scale(2.3) translateY(-3px);
         }
@@ -27,7 +27,7 @@
 
     &--margin-left {
 
-        @mixin atMedium {
+        @mixin atSmall {
             margin-left: 0.5rem;
         }
     }
@@ -36,7 +36,7 @@
 
         display: none;
 
-        @mixin atMedium {
+        @mixin atSmall {
 
             display: inline-block;
             margin-right: 1.5rem;

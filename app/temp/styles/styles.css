@@ -7732,6 +7732,7 @@ template {
 }
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #e6e9ef
 }
 img {
     max-width: 100%;
@@ -7753,13 +7754,19 @@ img {
 .align_right {
     text-align: right;
 }
+.padding-top-less {
+    padding-top: 20px;
+}
+.padding-top-more {
+    padding-top: 40px;
+}
 .site-header__logo {
         padding-left: 1rem;
         font-size: 2rem;
         font-family: Scribble;
         font-weight: 600;
     }
-@media(min-width: 1200px) {
+@media(min-width: 768px) {
 .site-header__links--padding-left {
             padding-left: 1.5rem
     }
@@ -7770,14 +7777,14 @@ img {
         -webkit-transform: translateY(-18px);
                 transform: translateY(-18px);
     }
-@media(min-width: 1200px) {
+@media(min-width: 768px) {
 .site-header__dropdown {
             font-size: 1rem;
             -webkit-transform: scale(2.3) translateY(-3px);
                     transform: scale(2.3) translateY(-3px)
     }
     }
-@media(min-width: 1200px) {
+@media(min-width: 768px) {
 .site-header--margin-left {
             margin-left: 0.5rem
     }
@@ -7786,7 +7793,7 @@ img {
 
         display: none;
     }
-@media(min-width: 1200px) {
+@media(min-width: 768px) {
 .site-header__img {
 
             display: inline-block;
@@ -7813,7 +7820,7 @@ img {
 .header__tagged {
         display: none;
     }
-@media(min-width: 1200px) {
+@media(min-width: 768px) {
 .header__tagged {
             display: inline
     }
@@ -7821,6 +7828,17 @@ img {
 .header__results {
         font-weight: 300;
         font-size: 1.2rem;
+    }
+.header__subheader .dropdown {
+            float: left;
+            clear: both;
+            display: block;
+        }
+@media(min-width: 768px) {
+.header__subheader .dropdown {
+                clear: none;
+                float: right
+        }
     }
 .header__subheader::after {
         content: "";
@@ -7833,4 +7851,50 @@ img {
         clear: both;
         display: table;
         height: 0;
+    }
+.search__image {
+
+        width: 100%;
+
+        border-top: 10px solid white;
+        border-left: 10px solid white;
+        border-right: 10px solid white;
+        border-bottom: 35px solid white;
+    }
+@media(min-width: 768px) {
+.search__image {
+            height: 265px;
+            width: 350px;
+    }
+    }
+.search__submission .caption--within-border-right {
+            position: relative;
+            bottom: 28px;
+            right: 5px;
+        }
+.search__submission .caption--within-border-right i {
+                font-weight: 200;
+                padding-right: 5px;
+            }
+.search__submission .caption--within-border-left {
+            position: relative;
+            bottom: 28px;
+            left: 10px;
+        }
+.search__user {
+        
+        padding: 15px 0 10px 0;
+    }
+.search__user img {
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+        }
+.search__user a {
+            padding-left: 10px;
+        }
+@media(min-width: 768px) {
+.search--padding-bottom {
+            padding-bottom: 80px
+    }
     }
