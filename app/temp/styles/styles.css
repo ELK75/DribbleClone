@@ -7740,7 +7740,7 @@ img {
 }
 @font-face {
     font-family: Scribble;
-    src: url("/fonts/Scribble.ttf");
+    src: url("../assets/styles/fonts/Scribble.ttf");
 }
 .float_left {
     float: left;
