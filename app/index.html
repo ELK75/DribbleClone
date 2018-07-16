@@ -33,7 +33,7 @@
                     <a class="nav-link" href="#">Jobs</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle site-header__dropdown site-header--margin-left" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link site-header__dropdown site-header--margin-left" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     ...
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -52,12 +52,24 @@
     </nav>
     <div class="container">
 
-        <div class="search">
-            <h3 class="search__query search--padding-top-more float-left">Search / <strong>websites</strong></h2>
-            <i class="fa fa-lock float-right search--padding-top-more" aria-hidden="true"> shots tagged <a href="#">websites</a></i>
+        <div class="header">
+            <h3 class="header__query header--padding-top-more float-left">Search / <strong>websites</strong></h2>
+            <i class="fa fa-lock float-right header__tagged header--padding-top-more" aria-hidden="true"> shots tagged <a href="#">websites</a></i>
         </div>
-            
-        <h3 class="search search__results search--padding-top-less">Shot results for <strong>websites</strong></h3>
+
+        <div class="header__subheader">
+            <h3 class="header header__results header--padding-top-less float-left">Shot results for <strong>websites</strong></h3>            
+            <div class="dropdown float-right header--padding-top-less">
+                <button class="btn btn-secondary btn-light btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Latest
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Hot</a>
+                    <a class="dropdown-item" href="#">New</a>
+                    <a class="dropdown-item" href="#">Rising</a>
+                </div>
+            </div>
+        </div>        
         <hr>
     </div>
 

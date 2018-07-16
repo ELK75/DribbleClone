@@ -7741,10 +7741,6 @@ img {
     font-family: Scribble;
     src: url(/assets/styles/fonts/Scribble.ttf);
 }
-/* changes the bootstrap dropdown to not show an arrow */
-.dropdown-toggle::after {
-    display: none;
-}
 .float_left {
     float: left;
 }
@@ -7802,23 +7798,37 @@ img {
                 border-radius: 50%;
             }
     }
-.search strong {
+.header strong {
         font-weight: 700;
     }
-.search--padding-top-more {
+.header--padding-top-more {
         padding-top: 40px;
     }
-.search--padding-top-less {
+.header--padding-top-less {
         padding-top: 20px;
     }
-.search__query {
+.header__query {
         font-weight: 300;
     }
-.search__results {
+.header__tagged {
+        display: none;
+    }
+@media(min-width: 1200px) {
+.header__tagged {
+            display: inline
+    }
+    }
+.header__results {
         font-weight: 300;
         font-size: 1.2rem;
     }
-.search::after {
+.header__subheader::after {
+        content: "";
+        clear: both;
+        display: table;
+        height: 0;
+    }
+.header::after {
         content: "";
         clear: both;
         display: table;

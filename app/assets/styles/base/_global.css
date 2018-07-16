@@ -12,10 +12,6 @@ img {
     src: url(/assets/styles/fonts/Scribble.ttf);
 }
 
-/* changes the bootstrap dropdown to not show an arrow */
-.dropdown-toggle::after {
-    display: none;
-}
 
 .float_left {
     float: left;
