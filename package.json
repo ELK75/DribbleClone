@@ -9,6 +9,7 @@
   "author": "Eli K",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^8.6.5",
     "browser-sync": "^2.24.5",
     "gulp": "^3.9.1",
     "gulp-postcss": "^7.0.1",
