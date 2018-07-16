@@ -16,11 +16,6 @@ gulp.task('previewDist', function() {
     });
 });
 
-gulp.task('copyFonts', ['deleteDistFolder'], function() {
-    return gulp.src("./app/assets/styles/fonts/**")
-        .pipe(gulp.dest("./docs/assets/styles/fonts/"));
-})
-
 gulp.task('deleteDistFolder', function() {
     return del('./docs');
 });
@@ -48,4 +43,4 @@ gulp.task('usemin', ['styles'], function() {
         .pipe(gulp.dest("./docs"));
 });
 
-gulp.task('build', ['deleteDistFolder', 'copyFonts', 'optimizeImages', 'useminTrigger']);
+gulp.task('build', ['deleteDistFolder', 'optimizeImages', 'useminTrigger']);
